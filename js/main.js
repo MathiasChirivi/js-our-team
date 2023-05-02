@@ -1,14 +1,13 @@
 console.log("Successfull");
 
-let teamScheda = document.getElementsByClassName("container");
-
+const teamScheda = document.querySelector(".container");
+console.log(teamScheda)
 const team = [
     {
       nome: "Wayne Barnett",
       ruolo: "Founder & CEO",
       foto: "wayne-barnett-founder-ceo.jpg"
     },
-    /*
     {
       nome: "Angela Caroll",
       ruolo: "Chief Editor" ,
@@ -17,7 +16,7 @@ const team = [
     {
       nome: "Walter Gordon",
       ruolo: "Office Manager",
-      foto:" walter-gordon-office-manager.jpg" 
+      foto:"walter-gordon-office-manager.jpg" 
     },
     {
      nome: "Angela Lopez", 
@@ -34,7 +33,6 @@ const team = [
      ruolo: "Graphic Designer",
       foto: "barbara-ramos-graphic-designer.jpg" 
     }
-    */
 ];
 
 //console.log(team);
@@ -45,7 +43,6 @@ for (const key in team) {
 
 
 createCards(team, teamScheda);
-
 
 /****************FUNCTION************************************* */
 
@@ -59,7 +56,7 @@ function createCards(team, teamScheda) {
         teamScheda.innerHTML += 
         `<div class = "cardTeam">
             <div class="cardImage">
-                <img src ="./img/${card.foto}"/>
+                <img src ="./img/${card.foto}">
             </div>
         <div class="cardText">
             <h3>${card.nome}</h3>
