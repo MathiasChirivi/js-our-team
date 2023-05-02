@@ -1,5 +1,7 @@
 console.log("Successfull");
 
+let teamScheda = document.getElementsByClassName("container");
+
 const team = [
     {
       nome: "Wayne Barnett",
@@ -41,11 +43,8 @@ for (const key in team) {
     console.log(`${key} con valore: `, team[key]);
 }
 
-let teamScheda = document.getElementsByClassName("container");
 
 createCards(team, teamScheda);
-
-
 
 
 /****************FUNCTION************************************* */
