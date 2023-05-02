@@ -54,9 +54,10 @@ function createCards(team, teamScheda) {
 
     for (let i = 0; i < team.length; i++) {
         const card = team[i];
+        console.log(card);
 
         teamScheda.innerHTML += 
-        `<div class = "card">
+        `<div class = "cardTeam">
             <div class="cardImage">
                 <img src ="./img/${card.foto}"/>
             </div>
