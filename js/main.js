@@ -67,7 +67,7 @@ function createCards(team, teamScheda) {
             <p>${card.ruolo}</p>
         </div>
         </div>
-    </div>`;
+    </div>`
 
      }
     }
